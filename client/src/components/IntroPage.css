@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .intro-container {
   position: relative;
   display: flex;

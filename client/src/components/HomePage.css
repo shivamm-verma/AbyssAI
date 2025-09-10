@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 body, .homepage {
   background-color: #0f2a53; /* dark bluish background */
   color: #e6f1ff; /* light bluish-white font color */

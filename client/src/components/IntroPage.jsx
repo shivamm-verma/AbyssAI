@@ -7,7 +7,7 @@ export default function IntroPage() {
 
   return (
     <div className="intro-container">
-      <h1 className="logo">AbyssAI</h1>
+      <h1 className="logo font-semibold">AbyssAI</h1>
       <p className="tagline">Revolutionizing Data with Visualization</p>
       <button className="start-btn" onClick={() => navigate("/home")}>
         Let’s Start →
