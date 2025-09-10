@@ -1,0 +1,15 @@
+body, .homepage {
+  background-color: #0f2a53; /* dark bluish background */
+  color: #e6f1ff; /* light bluish-white font color */
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #64ffda; /* accent color for headings */
+}
+
+p {
+  line-height: 1.6;
+}

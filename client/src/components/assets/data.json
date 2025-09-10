@@ -1,0 +1,22 @@
+
+
+{
+  "speciesData": [
+    { "id": "Cnidaria", "species": "Cnidaria", "count": 120, "probability": 0.95, "group": "known" },
+    { "id": "Protists", "species": "Protists", "count": 80, "probability": 0.85, "group": "known" },
+    { "id": "Crustacea", "species": "Crustacea", "count": 45, "probability": 0.6, "group": "known" },
+    { "id": "Mollusca", "species": "Mollusca", "count": 30, "probability": 0.5, "group": "known" },
+    { "id": "Annelida", "species": "Annelida", "count": 25, "probability": 0.4, "group": "known" },
+    { "id": "Cluster_1", "species": "Cluster_1", "count": 40, "probability": 0.7, "group": "unknown" },
+    { "id": "Cluster_2", "species": "Cluster_2", "count": 35, "probability": 0.6, "group": "unknown" },
+    { "id": "Cluster_3", "species": "Cluster_3", "count": 50, "probability": 0.8, "group": "unknown" },
+    { "id": "Cluster_4", "species": "Cluster_4", "count": 20, "probability": 0.3, "group": "unknown" }
+  ],
+  "networkLinks": [
+    { "source": "Cluster_1", "target": "Cnidaria", "weight": 0.7 },
+    { "source": "Cluster_2", "target": "Protists", "weight": 0.6 },
+    { "source": "Cluster_3", "target": "Crustacea", "weight": 0.8 },
+    { "source": "Cluster_4", "target": "Mollusca", "weight": 0.5 },
+    { "source": "Cluster_1", "target": "Cluster_3", "weight": 0.4 }
+  ]
+}
