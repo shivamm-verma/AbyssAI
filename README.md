@@ -19,36 +19,33 @@ npm install
 npm run dev
 ```
 
+
 ## 🗃️ File Structuring
-This will be updated most of the times.
-```
-|   .DS_Store
-|   .gitignore
-|   README.md
-|
-+---client
-|   |   .gitignore
-|   |   eslint.config.js
-|   |   index.html
-|   |   package-lock.json
-|   |   package.json
-|   |   README.md
-|   |   vite.config.js
-|   |
-|   \---src
-|       |   App.jsx
-|       |   global.css
-|       |   main.jsx
-|       |
-|       \---components
-|           |   HomePage.jsx
-|           |   IntroPage.css
-|           |   IntroPage.jsx
-|           |
-|           \---images
-|                   background.JPG
-|
-\---server
-        package-lock.json
-        package.json
+
+- Frontend: /client
+- backend: /server
+## Mermaid
+```mermaid
+flowchart TD
+
+    A["Raw eDNA Reads<br/>FASTQ Files"] --> B["Stage 1: Preprocessing & De<br/><br/>Quality Filtering"]
+    B --> C["Error Correction<br/>DADA2"]
+    C --> D["Output: Cleaned ASV Table"]
+
+    D --> E["Stage 2: Initial Clustering<br/><br/>Sequence Identity Clustering<br/>VSEARCH"]
+    E --> F["Output: MOTU Table & Rep Sequences"]
+
+    F --> G["Stage 3: AI-Powered Pattern"]
+    
+    G1["Feature Extraction<br/>k-mer frequency"] --> G2["Dimensionality Reduction<br/>UMAP"]
+    G2 --> G3["Clustering<br/>HDBSCAN"]
+
+    G --> G1
+    G1 --> G2
+    G2 --> G3
+
+    G3 --> H["Stage 4: Interpretation & Output<br/><br/>Taxonomy Assignment<br/>with Confidence Scores"]
+    H --> I["Abundance Estimation"]
+    I --> J["Novel Cluster Analysis"]
+    J --> K["Final Biodiversity Report"]
 ```
